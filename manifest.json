@@ -1,0 +1,20 @@
+{
+    "name" : "Share to Facebook extension",
+    "description" : "Shares images and text to facebook without having to open facebook!",
+    "version" : "1.0",
+    "permissions" : ["contextMenus" ,"activeTab"],
+    "icons" : {
+        "16": "16.png",
+        "48": "48.png",
+        "64": "64.png",
+        "128": "128.png"
+    },
+    "background" : {
+        "scripts" : ["background.js"]
+    },
+    "content_script" : [{
+        "matches": ["<all_urls>"],
+        "js" : ["index.js"]
+    }],
+    "manifest_version" : 2
+}
